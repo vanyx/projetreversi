@@ -6,8 +6,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**********INFOS**********/
 
-    // Le projet a été réalisé par Thomas BENALOUANE et Fabien LE MORZADEC
-    // Nous avons traité toutes les questions, à l'exception de celle du niveau 3 de l'IA
+// Le projet a été réalisé par Thomas BENALOUANE et Fabien LE MORZADEC
+// Nous avons traité toutes les questions, à l'exception de celle du niveau 3 de l'IA
 
 
 /*************************/
@@ -365,6 +365,12 @@ public class jeu {
         return cases;
     }
 
+    /**
+     * Joue un coup à la case donné si celui-ci est valide
+     *
+     * @param numero Numéro de la case
+     * @return Si le coup est joué ou non
+     */
     public static boolean joueCoup(int numero) {
         int valide = -1;
         String[] directions = {"N", "NE", "E", "SE", "S", "SO", "O", "NO"};
